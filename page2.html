@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.png">
+
+
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="page2.html">Facilities</a></li>
+    <li><a href="page3.html">Courses</a></li>
+    <li><a href="page4.html">Pricing Information</a></li>
+    <li><a href="page5.html">Getting There</a></li>
+</ul>
+<br><br>
+<div class="header">
+    <h2 style="margin-bottom: 0px;">OUR FACILITIES</h2>
+        <div class="main"; style = "margin-bottom: 0px ;">
+            <p>At Climb Central (Sports Hub), all climbing facilities are available for usage. From warming up, bouldering, to different belay systems to choose from depending on your preference and skill level! Click images below to learn out more about the facilities</p>
+        </div>
+</div>    
+
+<div class="container1">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="fingerboardwide.jpg" style="width:60%;margin-left: 20%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="warmupwide.jpg" style="width:60%;margin-left: 20%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="boulderingwide.jpg" style="width:60%;margin-left: 20%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="topropewide.png" style="width:60%;margin-left: 20%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="autobelaywide.jpg" style="width:60%;margin-left: 20%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="leadclimbingwide.jpg" style="width:60%;margin-left: 20%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container1">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column1">
+      <img class="demo cursor" src="fingerboard.jpg" style="width:100%" onclick="currentSlide(1)" alt="Training Area - Train your fundamentals and strength here!">
+    </div>
+    <div class="column1">
+      <img class="demo cursor" src="warmup.jpg" style="width:100%" onclick="currentSlide(2)" alt="Warm Up Area - Do Warm up before climbing!">
+    </div>
+    <div class="column1">
+      <img class="demo cursor" src="bouldering.jpg" style="width:100%" onclick="currentSlide(3)" alt="Bouldering - Challenge yourself but becareful, there is no harness!">
+    </div>
+    <div class="column1">
+      <img class="demo cursor" src="toprope.png" style="width:100%" onclick="currentSlide(4)" alt="Top Rope Climbing - Will you trust your friend to hold your weight?">
+    </div>
+    <div class="column1">
+      <img class="demo cursor" src="autobelay.jpg" style="width:100%" onclick="currentSlide(5)" alt="Auto-belay Climbing - There are options to climb solo too!">
+    </div>    
+    <div class="column1">
+      <img class="demo cursor" src="leadclimbing.jpg" style="width:100%" onclick="currentSlide(6)" alt="Lead Climbing - Training for actual rock climbing!">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<p style=color:white;text-align:center;font-size:20px;>Copyright &copy; 2022 Climb Central</p>
+<p style=color:white;text-align:center;font-size:20px;>All Rights Reserved</p>
+
+</body>
+</html> 

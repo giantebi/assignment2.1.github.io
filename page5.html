@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.png">
+
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="page2.html">Facilities</a></li>
+    <li><a href="page3.html">Courses</a></li>
+    <li><a href="page4.html">Pricing Information</a></li>
+    <li><a class="active" href="page5.html">Getting There</a></li>
+</ul>
+<br><br>
+<div class="header">
+    <h2 style="margin-bottom: 0px;">GETTING THERE</h2>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.242015416407!2d103.85257471715775!3d1.3070237389885135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da184bf725078d%3A0xdba7455a8b6edfd1!2sKallang%20Wave%20Mall!5e0!3m2!1sen!2ssg!4v1648740127074!5m2!1sen!2ssg" width="80%" height="60%" style="border:0;margin-left:150px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+<div class="row6">
+    <div class="column6" style="background-color:#aaa;">
+      <h2 class="subheader">Car</h2>
+      <p style = "color:rgba(0, 0, 0, 0.836); text-align: left; font-family:Gothic Medium , sans-serif;font-size: 20px;">Kallang Wave Mall Parking: $0.64/30 mins</p>
+      <p style ="margin-left:0px;"><a href="https://goo.gl/maps/9wcLSc8SG5EXaLQL8">Driving Here</a></p>
+    </div>
+    <div class="column6" style="background-color:#bbb;">
+      <h2 class="subheader">Bus</h2>
+      <p style = "color:rgba(0, 0, 0, 0.836); text-align: left; font-family:Gothic Medium , sans-serif;font-size: 20px;">Kallang Wave Mall is located near many landmarks such as Singapore National Stadium, Kallang Leisure Park, OCBC Arena, and Singapore Sports Hub. 
+          <br> <br> Bus services include: <br> 10, 11, 14, 14A, 16, 16M, 70, 70A, 70M, 196</p>
+    </div>
+    <div class="column6" style="background-color:#ccc;">
+      <h2 class="subheader">MRT</h2>
+        <p style = "color:rgba(0, 0, 0, 0.836); text-align: left; font-family:Gothic Medium , sans-serif;font-size: 20px;" >Kallang Wave Mall is located near to Stadium MRT (CC6), under the Circle MRT Line. Kallang Wave Mall is a shopping mall in Kallang, Singapore.</p>
+        <p style ="margin-left:2px;"><a href="http://journey.smrt.com.sg/journey/station_info/stadium/map/">Stadium MRT</a></p>
+        <p style ="margin-left:2px;"><a href="https://en.wikipedia.org/wiki/Circle_MRT_line">Cricle Line MRT</a></p>
+    </div>
+
+    </div>
+  </div>
+  
+  <p style=color:white;text-align:center;font-size:20px;>Copyright &copy; 2022 Climb Central</p>
+  <p style=color:white;text-align:center;font-size:20px;>All Rights Reserved</p>
+
+</body>
+</html> 

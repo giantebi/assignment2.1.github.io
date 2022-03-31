@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.png">
+
+
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="page2.html">Facilities</a></li>
+    <li><a class="active" href="page3.html">Courses</a></li>
+    <li><a href="page4.html">Pricing Information</a></li>
+    <li><a href="page5.html">Getting There</a></li>
+</ul>
+<br><br>
+<div class="header">
+    <h2 style="margin-bottom: 0px;">COURSES</h2>
+        <div class="main"; style = "margin-bottom: 0px ;">
+            <p>Climb Central regularly organise certifcation courses. Sign up at members price today!</p>
+        </div>
+</div>
+
+
+<!-- The grid: three columns -->
+<div class="row3">
+    <div class="column3" onclick="openTab('b1');" style="background:rgb(199, 147, 6);color:black;">SNCS Level 1</div>
+    <div class="column3" onclick="openTab('b2');" style="background:rgb(207, 25, 168);color:black;">SNCS Level 2</div>
+    <div class="column3" onclick="openTab('b3');" style="background:rgb(42, 68, 214);color:black;">SNCS Level 3</div>
+</div>
+  
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:rgb(199, 147, 6)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn3">x</span>
+    <div class="row2">
+        <div class="column2" style="background-color:hidden;height: 520px;">
+          <br><br>
+            <h2 class = "subheader" style = "color: black;">SNCS Level 1</h2>
+          <p class = "words";>Sport climbing level 1 in Singapore is a certification course for new climbers intending to take up climbing. The objective of this course is to give participants an enjoyable, safe and informative introduction to sport climbing.
+    
+           <br><br> Participants will be introduced to the various climbing equipment being used, climbing techniques, checking procedures, belaying for top-roping techniques and climbing calls.
+            
+            This course is a requirement when belaying in Singapore climbing gyms. It is also recognised in climbing gyms around South East Asia, subject to their respective terms and conditions.
+            <br><br>    
+            SNCS Level 1 is certified under Singapore Mountaineering Federation.
+             </p>
+            <h3 class="subheader"style = "color: black;">Requirements</h2>
+                <p class = "words">- 13 years old
+                  <br>    - No climbing Experience
+                  <br>    - Fully Vacinnated</p> <br>
+    
+        </div>
+        <div class="column2" style="background-color:hidden;height: 520px;">
+
+        <h3 class="subheader" style = "color: black;">Passing Criterias</h3></h2>
+            <p class = "words">- Correct usage of climbing equipment
+              <br>    - 5 step belaying technique
+              <br>    - Basic Climbing Technique
+              <br>    - Pre climb checks
+              <br>    - Variations of Climbing
+              <br>    - Caring and Inspection Tips
+              <br>    - Climbing Commands
+              <br>    - Safety Precautions
+              <br>    - Spotting</p>
+         <h3 class="subheader"style = "color: black;">Pricing</h2> 
+         <p class ="words"> $70 (1 day course)</p>
+            <p style ="margin-left:20px;"><a href="https://climbodachi.com/product/sncsl1/">BOOK NOW</a></p>
+        
+        </div>
+    </div>
+
+</div>
+  
+<div id="b2" class="containerTab" style="display:none;background:rgb(207, 25, 168)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn3">x</span>
+    <div class="row2">
+        <div class="column2" style="background-color:hidden;height: 520px;">
+        <br><br> 
+        <h2 class = "subheader" style = "color: black;">SNCS Level 2</h2>
+          <p class = "words";>
+            Sport climbing level 2 is an advancement from the top-roping skills acquired from Level 1 and progresses into lead climbing on artificial climbing walls. Participants must be confident in BOTH climbing and belaying techniques as covered in Level 1 before taking on this course.
+            <br><br> This course is a requirement when doing lead climbing in Singapore climbing gyms. It is also recognised in climbing gyms around South East Asia, subject to their respective terms and conditions.
+         <br><br>    
+            SNCS Level 2 is certified under Singapore Mountaineering Federation.
+             </p>
+            <h3 class="subheader"style = "color: black;">Requirements</h2>
+                <p class = "words">- Complete SNCS Level 1 certification course
+                  <br>    - Able to climb simple route without difficulty (Grade 6A)
+                  <br>    - Fully Vacinnated</p> <br>
+    
+        </div>
+        <div class="column2" style="background-color:hidden;height: 520px;">
+    
+        <h3 class="subheader" style = "color: black;">Passing Criterias</h3></h2>
+            <p class = "words">- Lead climbing equipment
+              <br>    - Dynamic belayer technique
+              <br>    - Arrest climber's fall
+              <br>    - Placement of protection points
+              <br>    - Climbing and clipping
+              <br>    - Undo clippings
+              <br>    - Safe falling position
+              <br>    - Cleaning route
+              <br>    - Sport and natural rock wall
+              <br>    - Safety Precautions</p>
+         <h3 class="subheader"style = "color: black;">Pricing</h2> 
+         <p class ="words"> $140 (2 days course)</p>
+            <p style ="margin-left:20px;"><a href="https://climbodachi.com/product/sncsl2/">BOOK NOW</a></p>
+        
+        </div>
+    </div>
+</div>
+  
+<div id="b3" class="containerTab" style="display:none;background:rgb(42, 68, 214)">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn3">x</span>
+    <div class="row2">
+        <div class="column2" style="background-color:hidden;height: 520px;">
+        <br><br> 
+        <h2 class = "subheader" style = "color: black;">SNCS Level 3</h2>
+          <p class = "words";>
+           <br><br> Sport climbing level 3 is designed as a follow on from the Sport Climbing Course Level 2 and Abseiling Level 1 or equivalent. This course builds on Lead Climbing Skills to advanced rope skills for safe anchor construction and rope management from suspended belay positions. Participants on this course should be confident in all the techniques covered at Level Two before undertaking this more advanced level course.           
+           <br><br> SNCS Level 3 is certified under Singapore Mountaineering Federation.
+             </p>
+            <h3 class="subheader"style = "color: black;">Requirements</h2>
+                <p class = "words">- Complete SNCS Level 2 certification course
+                  <br>    - Completed SNAS Abseiling Level 1
+                  <br>    - Fully Vacinnated</p> <br>
+    
+        </div>
+        <div class="column2" style="background-color:hidden;height: 520px;">
+    
+        <h3 class="subheader" style = "color: black;">Passing Criterias</h3></h2>
+            <p class = "words">- Anchor building Equipment
+              <br>    - Top down belaying technique
+              <br>    - Multi pitch climbing
+              <br>    - Types of protection points
+              <br>    - Rig up for abseil
+              <br>    - Rescue Techniques
+              <br>    - Setting up anchors
+              <br>    - Leading and seconding
+              <br>    - Abseil using backup system
+              <br>    - Accessory cords</p>
+         <h3 class="subheader"style = "color: black;">Pricing</h2> 
+         <p class ="words"> $300 (2 days course)</p>
+            <p style ="margin-left:20px;"><a href="https://climbodachi.com/product/sncsl3/">BOOK NOW</a></p>
+         
+        </div>
+    </div>
+</div> 
+
+<script>
+    function openTab(tabName) {
+      var i, x;
+      x = document.getElementsByClassName("containerTab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+</script>
+
+<br>
+
+<iframe style = "margin-left: 200px;" width="1120" height="630" src="https://www.youtube.com/embed/TIudRBkNjWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p style=color:white;text-align:center;font-size:20px;>Copyright &copy; 2022 Climb Central</p>
+<p style=color:white;text-align:center;font-size:20px;>All Rights Reserved</p>
+
+</body>
+</html> 
